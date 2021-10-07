@@ -10,7 +10,7 @@ parser.add_argument('--uppercase', type=bool, default=True, help='if uppercase l
 parser.add_argument('--numbers', type=bool, default=True, help='if numbers should be used (e.g. 01234')
 parser.add_argument('--symbols', type=bool, default=True, help='if random symbols should be used')
 parser.add_argument('--selected_symbols', type=str, nargs='+', default=[], help='provide a list of symbols that should be used (e.g. %, &, ...)')
-parser.add_argument('--number_of_passwords', type=int, default=100, help='number of passwords to create')
+parser.add_argument('--number_of_passwords', type=int, default=10, help='number of passwords to create')
 parser.add_argument('--password_length', type=int, default=10, help='password length')
 parser.add_argument('--write_to_file', type=bool, default=False, help='if password(s) should be written to file')
 parser.add_argument('--filename', type=str, default='passwordlists/pwlist.txt', help='filename to write files to (.txt)')
@@ -50,4 +50,3 @@ def main(args):
 if __name__ == '__main__':
     args = parser.parse_args()
     main(args)
-
